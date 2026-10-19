@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>О разработчике — ROBO RAMPAGE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="about">
+  <div class="parallax-bg" id="parallaxBg"></div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">
+        <span class="logo__mark" id="logoMark"></span>
+        <span class="logo__text" id="logoText"></span>
+      </a>
+      <nav class="nav" id="nav"></nav>
+      <div class="header__controls">
+        <button class="settings-btn" id="settingsBtn" type="button" aria-label="Настройки">⚙</button>
+        <button class="burger" id="burger" type="button" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="settings-panel" id="settingsPanel">
+    <h3 class="settings-panel__title">Настройки темы</h3>
+    <div class="settings-panel__row">
+      <span class="settings-panel__label">Основной цвет</span>
+      <div class="theme-swatches">
+        <button class="swatch" data-theme="coral" type="button" aria-label="Коралловый"></button>
+        <button class="swatch" data-theme="yellow" type="button" aria-label="Жёлтый"></button>
+      </div>
+    </div>
+    <p class="settings-panel__hint">Выбор сохраняется в браузере</p>
+  </div>
+
+  <main id="app"></main>
+
+  <footer class="footer" id="footer"></footer>
+
+  <div class="online-badge">играют сейчас: <b id="onlineCount">0</b></div>
+  <button class="to-top" id="toTop" type="button" aria-label="Наверх">▲</button>
+
+  <script src="js/config.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
