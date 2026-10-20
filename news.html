@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body data-page="news">
   <div class="parallax-bg" id="parallaxBg"></div>
@@ -34,7 +35,16 @@
   <div class="overlay" id="overlay"></div>
 
   <div class="settings-panel" id="settingsPanel">
-    <h3 class="settings-panel__title">Настройки темы</h3>
+    <h3 class="settings-panel__title">Настройки</h3>
+
+    <div class="settings-panel__row">
+      <span class="settings-panel__label">Тема</span>
+      <div class="mode-switch">
+        <button class="mode-btn" data-mode="dark" type="button">🌙 Тёмная</button>
+        <button class="mode-btn" data-mode="light" type="button">☀ Светлая</button>
+      </div>
+    </div>
+
     <div class="settings-panel__row">
       <span class="settings-panel__label">Основной цвет</span>
       <div class="theme-swatches">
@@ -42,6 +52,7 @@
         <button class="swatch" data-theme="yellow" type="button" aria-label="Жёлтый"></button>
       </div>
     </div>
+
     <p class="settings-panel__hint">Выбор сохраняется в браузере</p>
   </div>
 
